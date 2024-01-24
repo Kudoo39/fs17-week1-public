@@ -5,52 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="Explore the world of coffee" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles/style.css" rel="stylesheet" />
     <title>E-commerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-----------------HEADER---------------------->
     <header>
-      <nav>
-        <img src="/src/assets/logo.png" alt="logo" style="width: 220px; height: 60px" loading="lazy" />
-        <ul>
-          <li>Home</li>
-          <li>Our Products</li>
-          <li>Blog</li>
-          <li>About</li>
-          <li>Contact</li>
-          <li>Styleguide</li>
-        </ul>
-      </nav>
+      <div class="header__content">
+        <div class="header__content__logo">CoffeeStyle.</div>
+        <nav>
+          <ul class="navbar">
+            <li><a href="">Home</a></li>
+            <li><a href="">Our Products</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Styleguide</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <!-----------------MAIN---------------------->
     <main>
-      <article>
-        <p>Best Place to Buy Coffee</p>
-        <h2>Coffee Mugs</h2>
-        <p>The most versatile furniture system ever created. Designed to fit your life, made to move and grow.</p>
-        <button>Explore Our Products</button>
+      <article id="title">
+        <div class="title__content">
+          <p>Best Place to Buy Coffee</p>
+          <h2>Coffee Mugs</h2>
+          <p>The most versatile furniture system ever created. Designed to fit your life, made to move and grow.</p>
+          <button>Explore Our Products</button>
+        </div>
       </article>
 
       <section>
         <p>Feature Mugs</p>
-        <img src="/src/assets/coffee_01.jpg" alt="coffee img" style="width: 160px; height: 160px" loading="lazy" />
-        <img src="/src/assets/coffee_02.jpg" alt="coffee img" style="width: 160px; height: 160px" loading="lazy" />
+        <img src="/src/assets/coffee_08.jpg" alt="coffee img" style="width: 160px; height: 160px" loading="lazy" />
+        <img src="/src/assets/coffee_09.jpg" alt="coffee img" style="width: 160px; height: 160px" loading="lazy" />
       </section>
 
-      <section role="tree">
+      <section class="products">
         <p>More Products</p>
-        <ul role="group">
-          <li role="treeitem">
-            <img src="/src/assets/coffee_03.jpg" alt="coffee img" style="width: 160px; height: 160px" loading="lazy" />
-          </li>
-          <li role="treeitem">
-            <img src="/src/assets/coffee_04.jpg" alt="coffee img" style="width: 160px; height: 160px" loading="lazy" />
-          </li>
-          <li role="treeitem">
-            <img src="/src/assets/coffee_05.jpg" alt="coffee img" style="width: 160px; height: 160px" loading="lazy" />
-          </li>
-        </ul>
+        <div class="products__list">
+          <img src="/src/assets/coffee_01.jpg" alt="coffee img" loading="lazy" />
+
+          <img src="/src/assets/coffee_02.jpg" alt="coffee img" loading="lazy" />
+
+          <img src="/src/assets/coffee_03.jpg" alt="coffee img" loading="lazy" />
+
+          <img src="/src/assets/coffee_04.jpg" alt="coffee img" loading="lazy" />
+
+          <img src="/src/assets/coffee_05.jpg" alt="coffee img" loading="lazy" />
+
+          <img src="/src/assets/coffee_06.jpg" alt="coffee img" loading="lazy" />
+
+          <img src="/src/assets/coffee_07.jpg" alt="coffee img" loading="lazy" />
+
+          <img src="/src/assets/coffee_08.jpg" alt="coffee img" loading="lazy" />
+
+          <img src="/src/assets/coffee_09.jpg" alt="coffee img" loading="lazy" />
+        </div>
       </section>
 
       <form>
