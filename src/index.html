@@ -16,11 +16,11 @@
   </head>
   <body>
     <!-----------------HEADER---------------------->
-    <header>
+    <header class="header">
       <div class="header__content">
         <div class="header__content__logo">CoffeeStyle.</div>
         <nav>
-          <ul class="navbar">
+          <ul class="">
             <li><a href="">Home</a></li>
             <li><a href="">Our Products</a></li>
             <li><a href="">Blog</a></li>
@@ -35,22 +35,30 @@
     <!-----------------MAIN---------------------->
     <main>
       <article id="title">
-        <div class="title__content">
-          <p>Best Place to Buy Coffee</p>
-          <h2>Coffee Mugs</h2>
-          <p>The most versatile furniture system ever created. Designed to fit your life, made to move and grow.</p>
-          <button>Explore Our Products</button>
+        <div class="title__cover">
+          <div class="title__content">
+            <h1>Best Place to Buy Coffee</h1>
+            <h2>Coffee Mugs</h2>
+            <p>The most versatile furniture system ever created. Designed to fit your life, made to move and grow.</p>
+            <button><span>Explore Our Products</span></button>
+          </div>
         </div>
       </article>
 
-      <section>
-        <p>Feature Mugs</p>
-        <img src="/src/assets/coffee_08.jpg" alt="coffee img" style="width: 160px; height: 160px" loading="lazy" />
-        <img src="/src/assets/coffee_09.jpg" alt="coffee img" style="width: 160px; height: 160px" loading="lazy" />
+      <section class="features">
+        <div class="featured__title">
+          <p>Feature Mugs</p>
+        </div>
+        <div class="features__image">
+          <img src="/src/assets/coffee_08.jpg" alt="coffee img" loading="lazy" />
+          <img src="/src/assets/coffee_09.jpg" alt="coffee img" loading="lazy" />
+        </div>
       </section>
 
       <section class="products">
-        <p>More Products</p>
+        <div class="products__title">
+          <p>More Products</p>
+        </div>
         <div class="products__list">
           <img src="/src/assets/coffee_01.jpg" alt="coffee img" loading="lazy" />
 
@@ -72,20 +80,23 @@
         </div>
       </section>
 
-      <form>
-        <p>Sign up and get free coffee bags</p>
-        <h2>Coffee Updates</h2>
-        <label for="email">Your Email:</label>
-        <input type="text" name="email" aria-labelledby="email" placeholder="coffee@gmail.com" />
-        <button type="submit">Subcribe</button>
+      <form class="subscription">
+        <div class="subscription__text">
+          <p>Sign up and get free coffee bags</p>
+        </div>
+        <div class="subscription__title">
+          <h2>Coffee Updates</h2>
+        </div>
+        <div class="subscription__input">
+          <input type="text" name="email" placeholder="coffee@gmail.com" />
+          <button type="submit"><span>Subcribe</span></button>
+        </div>
       </form>
-
-      <section></section>
     </main>
 
     <!-----------------FOOTER---------------------->
-    <footer>
-      <address>
+    <footer class="footer">
+      <address class="footer__address">
         Designed by
         <a href="https://coffeestyle-template.webflow.io/">CoffeeStyle</a>
         <br />
