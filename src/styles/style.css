@@ -28,6 +28,11 @@ body {
   font-weight: 700;
   letter-spacing: 2px;
   justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.header__content .header__content__logo:hover {
+  transform: scale(1.2);
 }
 
 .header__content nav {
@@ -48,6 +53,10 @@ body {
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: 2px;
+}
+
+.header__content ul li a:hover {
+  color: black;
 }
 
 #title {
@@ -80,23 +89,56 @@ body {
 .title__content h1 {
   font-size: 15px;
   font-weight: 500;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.title__animation {
+  width: max-content;
 }
 
 .title__content h2 {
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 10px;
+  font-size: 40px;
+  overflow: hidden;
+  display: inline-block;
+  border-right: 2px solid #091c28;
+  white-space: nowrap;
+  margin: 0;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  animation: typing 3s steps(40, end), blink-caret 0.5s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #ffffff;
+  }
 }
 
 .title__content p {
   font-weight: 400;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .title__content button {
   font-weight: 400;
   padding: 20px;
+}
+
+.title__content button:hover {
+  transform: scale(1.1);
 }
 
 .title__content span {
@@ -123,8 +165,12 @@ body {
 }
 
 .features__image img {
-  height: 540px;
+  height: 480px;
   width: 460px;
+}
+
+.features__image img:hover {
+  transform: scale(1.02);
 }
 
 .products {
@@ -148,6 +194,10 @@ body {
   width: 33vw;
   height: auto;
   object-fit: cover;
+}
+
+.products__list img:hover {
+  transform: scale(1.02);
 }
 
 .subscription {
@@ -180,6 +230,8 @@ body {
 }
 
 .subscription .subscription__input input {
+  color: white;
+  font-weight: 600;
   background-color: transparent;
   padding: 15px;
   border-style: solid;
@@ -197,6 +249,10 @@ body {
   padding: 15px;
 }
 
+.subscription .subscription__input button:hover {
+  transform: scale(1.1);
+}
+
 .subscription .subscription__input span {
   font-weight: 700;
 }
@@ -211,4 +267,15 @@ body {
   margin-left: 30vw;
   margin-top: 10vh;
   font-size: 1.25rem;
+}
+
+.footer .footer__address a {
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.footer .footer__address a:hover {
+  color: #d0a4b1;
 }
