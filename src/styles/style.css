@@ -1,0 +1,82 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  background-color: #ffbf00;
+  padding: 20px 0;
+}
+
+.header__content {
+  display: flex;
+  margin: auto;
+}
+
+.header__content .header__content__logo {
+  display: flex;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  align-items: center;
+}
+
+.header__content nav {
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+}
+
+.header__content ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.header__content ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+#title {
+  background: url('/src/assets/coffee_background.jpg');
+  background-size: cover;
+  background-position: bottom;
+  height: 40vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title__content {
+  color: white;
+}
+
+.products__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.products__list img {
+  width: 300px;
+  height: 380px;
+  object-fit: cover;
+}
+
+footer {
+  height: 20vh;
+  background-color: black;
+  color: white;
+}
