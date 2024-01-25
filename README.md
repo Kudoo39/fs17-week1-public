@@ -1,33 +1,35 @@
-# Week 1 Assignment
+# Coffee Page
 
-This assignment aims to practice HTML, CSS and SASS
+Welcome to the Coffee Page! Explore the rich world of coffee with a curated collection of the finest blends
 
-## Requirement
+![Coffee Page Screenshot](src/assets/demo-coffee.png)
 
-Create an e-commerce website
+## Features
 
-1. Git/GitHub
+- **Featured Blends:** Discover a selection of exceptional coffee blends with unique flavors.
+- **Aesthetic Design:** Enjoy a visually appealing and user-friendly interface.
 
-- create a simple `README` file to introduce yourself
-- submit the assignment by open a pull request (PR)
-- make the repository public
-- add label to your PR
+**[Live Demo](https://kudoo39.github.io/restaurant-app)**
 
-2. HTML and Accessibility
+## Technologies Used
 
-- Make use of different tags: headings, paragraphs, link, italic, ordered list, unordered list,table, form
-- Check out more tags that might be helpful: address, section, article, audio
+- HTML
+- CSS
+- SASS
 
-3. CSS
+## About Me
 
-- add styling to the HTML file using Flexbox and Grid
-- add basic animation (hover effect, active link styles, typing effect)
-- the web page does not need to be fully responsive, but at least you should have responsive scaling for Flexbox and Grid system.
+My name is Khang Nguyen. Currently, I'm a passionate fourth-year student at XAMK. I love coding, problem-solving, and building creative solutions with technology. I am enthusiastic about joining Integrify. I aspire to become a proficient full-stack developer, and I believe that Integrify is the perfect opportunity to achieve that goal.
 
-4. SASS
+## 🔧 Technologies & Tools
 
-- apply SAAS to current project. Make sure to at least use variables and mixins
+- Front-end: HTML, CSS, JavaScript / TypeScript, React, Bootstrap, Chakra UI, Material UI
+- Back-end: Node.js, Express.js, Mongoose
+- Database: MongoDB
+- Version Control: Git
 
-5. Other
-   - Deploy the project
-   - Write a readme file to describe your project with few more details
+## 📫 Let's Connect
+
+- Let's connect and explore opportunities to collaborate! 😉
+- Feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/khang-nguyen3902)!
+- My [Portfolio](https://kudoo39.github.io/react-portfolio)!
