@@ -9,7 +9,7 @@ Welcome to the Coffee Page! Explore the rich world of coffee with a curated coll
 - **Featured Blends:** Discover a selection of exceptional coffee blends with unique flavors.
 - **Aesthetic Design:** Enjoy a visually appealing and user-friendly interface.
 
-**[Live Demo](https://kudoo39.github.io/restaurant-app)**
+**[Live Demo](https://simple-coffee-page.netlify.app/)**
 
 ## Technologies Used
 
