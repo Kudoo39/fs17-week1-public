@@ -14,8 +14,12 @@ body {
 }
 
 .header {
-  display: flex;
+  display: none;
   padding: 20px 0;
+
+  @media screen and (min-width: variables.$md-screen) {
+    display: flex;
+  }
 }
 
 .header__content {
@@ -107,7 +111,7 @@ body {
 
     p {
       font-weight: variables.$font-normal;
-      margin-bottom: 30px;
+      margin: 0px 20px 30px 20px;
     }
 
     button {
@@ -163,12 +167,29 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
+
+    @media screen and (min-width: variables.$sm-screen) {
+      gap: 20px;
+    }
 
     img {
-      height: 480px;
-      width: 460px;
+      height: 187.8px;
+      width: 180px;
       @include mixins.hover-effect-sm;
+
+      @media screen and (min-width: variables.$sm-screen) {
+        height: 313px;
+        width: 300px;
+      }
+      @media screen and (min-width: variables.$md-screen) {
+        height: 365.2px;
+        width: 350px;
+      }
+      @media screen and (min-width: variables.$lg-screen) {
+        height: 480px;
+        width: 460px;
+      }
     }
   }
 }
