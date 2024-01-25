@@ -1,0 +1,246 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+}
+
+.header {
+  display: flex;
+  padding: 20px 0;
+}
+
+.header__content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.header__content__logo {
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+.header__content__logo:hover:hover {
+  transform: scale(1.2);
+}
+.header__content__logo nav {
+  display: flex;
+  font-size: 20px;
+}
+.header__content ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  gap: 30px;
+}
+.header__content ul li a {
+  text-decoration: none;
+  color: gray;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.header__content ul li a:hover {
+  color: black;
+}
+
+.title {
+  background: url("/src/assets/coffee_background.jpg");
+  background-size: cover;
+  background-position: bottom;
+  height: 530px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.title__cover {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title__content {
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.title__content h1 {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.title__content h2 {
+  font-size: 40px;
+  overflow: hidden;
+  display: inline-block;
+  border-right: 2px solid #091c28;
+  white-space: nowrap;
+  margin: 0;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  animation: typing 3s steps(40, end), blink-caret 0.5s step-end infinite;
+}
+.title__content p {
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.title__content button {
+  font-weight: 400;
+  padding: 20px;
+}
+.title__content button:hover:hover {
+  transform: scale(1.2);
+}
+.title__content span {
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+.title__animation {
+  width: max-content;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #ffffff;
+  }
+}
+.featured {
+  display: flex;
+  flex-direction: column;
+}
+.featured__title {
+  margin: auto;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.featured__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.featured__image img {
+  height: 480px;
+  width: 460px;
+}
+.featured__image img:hover {
+  transform: scale(1.02);
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+.products__title {
+  font-weight: 700;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.products__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.products__list img {
+  width: 33vw;
+  height: auto;
+  object-fit: cover;
+}
+.products__list img:hover:hover {
+  transform: scale(1.02);
+}
+
+.subscription {
+  width: 100%;
+  height: 300px;
+  background-color: #1d1f2e;
+  color: white;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.subscription__text {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.subscription__title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+.subscription__input {
+  display: flex;
+  justify-content: center;
+}
+.subscription__input input {
+  color: white;
+  font-weight: 600;
+  background-color: transparent;
+  padding: 15px;
+  border-style: solid;
+  border-color: white;
+  border: 0.1px solid white;
+}
+.subscription__input input::placeholder {
+  font-size: 12px;
+  font-weight: 900;
+}
+.subscription__input button {
+  background-color: white;
+  padding: 15px;
+}
+.subscription__input button:hover:hover {
+  transform: scale(1.02);
+}
+.subscription__input span {
+  font-weight: 700;
+}
+
+.footer {
+  height: 20vh;
+  color: black;
+}
+.footer__address {
+  font-weight: 700;
+  margin-left: 30vw;
+  margin-top: 10vh;
+  font-size: 20px;
+}
+.footer__address a {
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+.footer__address a:hover {
+  color: #d0a4b1;
+}
+
+/*# sourceMappingURL=style.css.map */
