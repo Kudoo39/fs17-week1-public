@@ -1,0 +1,13 @@
+@use './variables';
+
+@mixin hover-effect-sm {
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+@mixin hover-effect {
+  &:hover {
+    transform: scale(1.2);
+  }
+}

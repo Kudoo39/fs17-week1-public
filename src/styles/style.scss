@@ -1,1 +1,281 @@
-// scss code here
+@use './variables';
+@use './mixins';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: variables.$main-font;
+}
+
+.header {
+  display: flex;
+  padding: 20px 0;
+}
+
+.header__content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  &__logo {
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: variables.$font-bold;
+    letter-spacing: 2px;
+    justify-content: center;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      @include mixins.hover-effect;
+    }
+
+    nav {
+      display: flex;
+      font-size: variables.$base-font-size;
+    }
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 30px;
+
+    li a {
+      text-decoration: none;
+      color: gray;
+      font-size: 1rem;
+      font-weight: variables.$font-bold;
+      letter-spacing: 2px;
+
+      &:hover {
+        color: black;
+      }
+    }
+  }
+}
+
+.title {
+  background: url('/src/assets/coffee_background.jpg');
+  background-size: cover;
+  background-position: bottom;
+  height: 530px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+
+  &__cover {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__content {
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+      font-size: 15px;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: variables.$base-font-size * 2;
+      overflow: hidden;
+      display: inline-block;
+      border-right: 2px solid #091c28;
+      white-space: nowrap;
+      margin: 0;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+      animation: typing 3s steps(40, end), blink-caret 0.5s step-end infinite;
+    }
+
+    p {
+      font-weight: variables.$font-normal;
+      margin-bottom: 30px;
+    }
+
+    button {
+      font-weight: variables.$font-normal;
+      padding: 20px;
+
+      &:hover {
+        @include mixins.hover-effect;
+      }
+    }
+
+    span {
+      font-weight: 600;
+      letter-spacing: 3px;
+    }
+  }
+
+  &__animation {
+    width: max-content;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #ffffff;
+  }
+}
+
+.featured {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    margin: auto;
+    font-weight: variables.$font-bold;
+    margin-bottom: 20px;
+  }
+
+  &__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    img {
+      height: 480px;
+      width: 460px;
+      @include mixins.hover-effect-sm;
+    }
+  }
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+
+  &__title {
+    font-weight: variables.$font-bold;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    img {
+      width: 33vw;
+      height: auto;
+      object-fit: cover;
+
+      &:hover {
+        @include mixins.hover-effect-sm;
+      }
+    }
+  }
+}
+
+.subscription {
+  width: 100%;
+  height: 300px;
+  background-color: #1d1f2e;
+  color: white;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__text {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+
+  &__input {
+    display: flex;
+    justify-content: center;
+
+    input {
+      color: white;
+      font-weight: 600;
+      background-color: transparent;
+      padding: 15px;
+      border-style: solid;
+      border-color: white;
+      border: 0.1px solid white;
+
+      &::placeholder {
+        font-size: 12px;
+        font-weight: 900;
+      }
+    }
+
+    button {
+      background-color: white;
+      padding: 15px;
+
+      &:hover {
+        @include mixins.hover-effect-sm;
+      }
+    }
+
+    span {
+      font-weight: variables.$font-bold;
+    }
+  }
+}
+
+.footer {
+  height: 20vh;
+  color: black;
+
+  &__address {
+    font-weight: variables.$font-bold;
+    margin-left: 30vw;
+    margin-top: 10vh;
+    font-size: variables.$base-font-size;
+
+    a {
+      text-decoration: none;
+      font-size: variables.$base-font-size;
+      letter-spacing: 1px;
+      font-weight: variables.$font-bold;
+
+      &:hover {
+        color: #d0a4b1;
+      }
+    }
+  }
+}

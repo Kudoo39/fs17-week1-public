@@ -59,7 +59,7 @@ body {
   color: black;
 }
 
-#title {
+.title {
   background: url('/src/assets/coffee_background.jpg');
   background-size: cover;
   background-position: bottom;
@@ -146,7 +146,7 @@ body {
   letter-spacing: 3px;
 }
 
-.features {
+.featured {
   display: flex;
   flex-direction: column;
 }
@@ -157,19 +157,19 @@ body {
   margin-bottom: 20px;
 }
 
-.features__image {
+.featured__image {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
 }
 
-.features__image img {
+.featured__image img {
   height: 480px;
   width: 460px;
 }
 
-.features__image img:hover {
+.featured__image img:hover {
   transform: scale(1.02);
 }
 
