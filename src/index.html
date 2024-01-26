@@ -15,6 +15,13 @@
       href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!-----------------HEADER---------------------->
@@ -54,8 +61,26 @@
           <p>Feature Mugs</p>
         </div>
         <div class="featured__image">
-          <img src="./assets/coffee_08.jpg" alt="coffee img" loading="lazy" />
-          <img src="./assets/coffee_09.jpg" alt="coffee img" loading="lazy" />
+          <div class="featured__image-card">
+            <img src="./assets/coffee_08.jpg" alt="coffee img" loading="lazy" />
+            <div class="featured__image-card-tag">
+              <p>Pink Premium Ceramic</p>
+              <div class="featured__image-card-tag-price">
+                <span>$99.00</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="featured__image-card">
+            <img src="./assets/coffee_09.jpg" alt="coffee img" loading="lazy" />
+            <div class="featured__image-card-tag">
+              <p>Golden Designers Mug</p>
+              <div class="featured__image-card-tag-price">
+                <span>$50.00</span>
+                <span class="featured__image-card-tag-price-line">$69.00</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -110,6 +135,11 @@
         <br />
         Finland
       </address>
+      <div class="footer__icon">
+        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
     </footer>
   </body>
 </html>

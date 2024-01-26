@@ -7,7 +7,8 @@
 }
 
 body {
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
+  overflow-x: hidden;
 }
 
 .header {
@@ -59,7 +60,7 @@ body {
 }
 
 .title {
-  background: url('./assets/coffee_background.jpg');
+  background: url("/src/assets/coffee_background.jpg");
   background-size: cover;
   background-position: bottom;
   height: 530px;
@@ -126,8 +127,7 @@ body {
   }
 }
 @keyframes blink-caret {
-  from,
-  to {
+  from, to {
     border-color: transparent;
   }
   50% {
@@ -178,6 +178,23 @@ body {
     height: 480px;
     width: 460px;
   }
+}
+.featured__image-card-tag {
+  text-align: center;
+  margin-top: 20px;
+}
+.featured__image-card-tag p {
+  margin-bottom: 3px;
+  font-weight: 400;
+  font-size: 20px;
+}
+.featured__image-card-tag-price {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(177, 120, 44);
+}
+.featured__image-card-tag-price-line {
+  text-decoration-line: line-through;
 }
 
 .products {
@@ -253,13 +270,15 @@ body {
 }
 
 .footer {
-  height: 20vh;
+  height: 200px;
   color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .footer__address {
   font-weight: 700;
-  margin-left: 30vw;
-  margin-top: 10vh;
   font-size: 20px;
 }
 .footer__address a {
@@ -270,6 +289,21 @@ body {
 }
 .footer__address a:hover {
   color: #d0a4b1;
+}
+.footer__icon {
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
+  margin-top: 40px;
+}
+.footer__icon i {
+  font-size: 34px;
+  margin-right: 10px;
+  color: #1d1f2e;
+  cursor: pointer;
+}
+.footer__icon i:hover {
+  color: rgb(177, 120, 44);
 }
 
 /*# sourceMappingURL=style.css.map */
