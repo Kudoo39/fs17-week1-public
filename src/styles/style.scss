@@ -11,6 +11,7 @@
 
 body {
   font-family: variables.$main-font;
+  overflow-x: hidden;
 }
 
 .header {
@@ -191,6 +192,29 @@ body {
         width: 460px;
       }
     }
+
+    &-card {
+      &-tag {
+        text-align: center;
+        margin-top: 20px;
+
+        p {
+          margin-bottom: 3px;
+          font-weight: variables.$font-normal;
+          font-size: variables.$base-font-size;
+        }
+
+        &-price {
+          font-size: variables.$base-font-size;
+          font-weight: variables.$font-normal;
+          color: rgb(177, 120, 44);
+
+          &-line {
+            text-decoration-line: line-through;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -279,13 +303,15 @@ body {
 }
 
 .footer {
-  height: 20vh;
+  height: 200px;
   color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
   &__address {
     font-weight: variables.$font-bold;
-    margin-left: 30vw;
-    margin-top: 10vh;
     font-size: variables.$base-font-size;
 
     a {
@@ -296,6 +322,24 @@ body {
 
       &:hover {
         color: #d0a4b1;
+      }
+    }
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+    margin-top: 40px;
+
+    i {
+      font-size: 34px;
+      margin-right: 10px;
+      color: #1d1f2e;
+      cursor: pointer;
+
+      &:hover {
+        color: rgb(177, 120, 44);
       }
     }
   }
