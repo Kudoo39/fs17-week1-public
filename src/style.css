@@ -230,11 +230,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-bottom: 10px;
 }
 .subscription__text {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .subscription__title {
   display: flex;
@@ -250,7 +251,7 @@ body {
 }
 .subscription__input input {
   color: white;
-  width: 40%;
+  width: 20%;
   font-weight: 600;
   background-color: transparent;
   padding: 15px;
@@ -265,7 +266,7 @@ body {
 .subscription__input textarea {
   color: white;
   font-weight: 600;
-  width: 40%;
+  width: 20%;
   background-color: transparent;
   padding: 15px;
   border-style: solid;
@@ -273,19 +274,42 @@ body {
   border: 0.1px solid white;
 }
 .subscription__input textarea::placeholder {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 900;
 }
 .subscription__input button {
   background-color: white;
-  width: 40%;
+  width: 20%;
   padding: 15px;
+  margin-top: 10px;
 }
 .subscription__input button:hover:hover {
   transform: scale(1.02);
 }
 .subscription__input span {
   font-weight: 700;
+}
+@media screen and (max-width: 1024px) {
+  .subscription__input input {
+    width: 40%;
+  }
+  .subscription__input textarea {
+    width: 40%;
+  }
+  .subscription__input button {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .subscription__input input {
+    width: 50%;
+  }
+  .subscription__input textarea {
+    width: 50%;
+  }
+  .subscription__input button {
+    width: 50%;
+  }
 }
 
 .footer {
